@@ -9,7 +9,6 @@ var geo={
     },
     sucess: function(p){
         geo.lat = p.coords.latitude;
-        geo.lng = p.coords.longitude
-        ;
+        geo.lng = p.coords.longitude;
     }
 };

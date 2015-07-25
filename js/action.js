@@ -1,7 +1,5 @@
 var fn = {
-    ready: function(){
-        document.addEventListener("deciveready",fn.init,false)
-    },
+    
     init: function(){
         geo.getPosition();
         //Posición del mapa
@@ -18,6 +16,9 @@ var fn = {
             map: map, 
             title:"Mi posición"
         });
+    },
+    ready: function(){
+        document.addEventListener("deviceready",fn.init,false)
     }
 };
 $(fn.ready);
