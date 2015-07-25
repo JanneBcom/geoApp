@@ -3,7 +3,7 @@ var fn = {
     init: function(){
         geo.getPosition();
         //Posición del mapa
-        var latlng = new google.maps.LatLng(geo.lat, geo.lng);
+        var latlng = new google.maps.LatLng(geo.lng, geo.lat);
         var myOptions = {
             zoom: 8,
             center: latlng,
